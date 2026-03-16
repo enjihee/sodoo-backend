@@ -1,8 +1,13 @@
-const display = document.getElementById("display")
-function append(value) {
-display.value += value 
+
+function add(value){
+    document.getElementById("display").value += value;
 }
-function clearDisplay() {
-    display.value = "";
-    
+
+function clearDisplay(){
+    document.getElementById("display").value = "";
+}
+
+function calculate(){
+    let result = eval(document.getElementById("display").value);
+    document.getElementById("display").value = result;
 }
